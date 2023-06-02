@@ -1,0 +1,54 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO power_gate
+  CLASS BLOCK ;
+  FOREIGN power_gate ;
+  ORIGIN 7.140 5.670 ;
+  SIZE 62.980 BY 10.210 ;
+  PIN vdd
+    DIRECTION INOUT ;
+    PORT
+      LAYER met3 ;
+        RECT -7.140 3.490 55.830 4.540 ;
+    END
+  END vdd
+  PIN en
+    DIRECTION INPUT ;
+    PORT
+      LAYER met3 ;
+        RECT -7.130 -5.670 -5.440 -4.580 ;
+    END
+  END en
+  PIN vss
+    DIRECTION INOUT ;
+    PORT
+      LAYER met3 ;
+        RECT -7.130 -3.610 -5.440 -1.460 ;
+    END
+  END vss
+  PIN vdd_switch
+    DIRECTION INOUT ;
+    PORT
+      LAYER met3 ;
+        RECT -5.030 -5.670 55.840 -4.610 ;
+    END
+  END vdd_switch
+  OBS
+      LAYER li1 ;
+        RECT -6.950 -5.465 55.645 4.360 ;
+      LAYER met1 ;
+        RECT -7.000 -5.015 55.550 4.390 ;
+      LAYER met2 ;
+        RECT -7.080 -5.150 55.490 4.410 ;
+      LAYER met3 ;
+        RECT -7.140 3.090 -2.270 3.490 ;
+        RECT -7.140 -1.060 55.840 3.090 ;
+        RECT -5.040 -4.010 55.840 -1.060 ;
+        RECT -7.140 -4.180 55.840 -4.010 ;
+        RECT -5.040 -4.210 55.840 -4.180 ;
+  END
+END power_gate
+END LIBRARY
+

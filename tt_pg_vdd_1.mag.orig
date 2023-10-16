@@ -1,0 +1,21 @@
+magic
+tech sky130A
+timestamp 1697029486
+<< metal4 >>
+rect 0 11102 920 11152
+rect 0 0 120 11000
+rect 170 0 435 11000
+rect 485 0 750 11000
+rect 800 0 920 11000
+<< labels >>
+rlabel metal4 0 0 120 11000 1 VGND
+port 1 n ground input
+rlabel metal4 800 0 920 11000 1 VGND
+port 1 n ground input
+rlabel metal4 170 0 435 11000 1 VPWR
+port 2 n power input
+rlabel metal4 485 0 750 11000 1 GPWR
+port 3 n power output
+rlabel metal4 0 11102 920 11152 1 ctrl
+port 4 n signal input
+<< end >>
